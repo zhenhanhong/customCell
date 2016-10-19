@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^ReturnMsgBlock)(NSString *msg);
 @interface SelectItemTableViewController : UITableViewController
+@property(nonatomic,copy)ReturnMsgBlock returnTextBlock;
+-(void)returnMsg:(ReturnMsgBlock)block;
 
 @end

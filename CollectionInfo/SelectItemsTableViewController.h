@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^ReturnMsgs)(NSArray *arr);
 @interface SelectItemsTableViewController : UITableViewController
-
+@property(nonatomic, copy)ReturnMsgs returnMsgsBock;
+-(void)returnMsgs:(ReturnMsgs)returnmsgs;
 @end

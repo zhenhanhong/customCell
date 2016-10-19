@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Makermeet. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "InfoCollectionViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource,sendMessageDelegate>
+@interface InfoCollectionViewController ()<UITableViewDelegate, UITableViewDataSource,sendMessageDelegate>
 @property(nonatomic, strong)NSString *line;
 @property(nonatomic, strong)NSString *lines;
 @property(nonatomic, strong)NSString *date;
@@ -16,7 +16,7 @@
 @property(nonatomic, strong)NSString *MutiSelect;
 @end
 
-@implementation ViewController
+@implementation InfoCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

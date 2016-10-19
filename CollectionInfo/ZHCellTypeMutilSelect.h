@@ -9,5 +9,5 @@
 #import "BaseTableviewcell.h"
 
 @interface ZHCellTypeMutilSelect : BaseTableviewcell
-
+@property(nonatomic, strong)UILabel *item;
 @end

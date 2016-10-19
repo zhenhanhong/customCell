@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ZHMessage.h"
+@protocol sendMessageDelegate <NSObject>
+-(void)sendMessageWithDic:(NSDictionary *)dic;
+@end
 @interface BaseTableviewcell : UITableViewCell
-
+@property(nonatomic, strong)ZHMessage *zhmessage;
+@property(nonatomic, strong)UILabel *title;
+@property(nonatomic, strong)UIView *bgView;
+@property(nonatomic, assign)id<sendMessageDelegate>delegate;
 @end

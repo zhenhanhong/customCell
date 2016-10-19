@@ -9,5 +9,8 @@
 #import "Collection.h"
 
 @implementation Collection
+-(NSString *)title{
+    return  _title;
+}
 
 @end

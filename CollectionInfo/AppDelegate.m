@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "InfoCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    InfoCollectionViewController *Vc = [[InfoCollectionViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:Vc];
+    [self.window setRootViewController:navi];
     return YES;
 }
 

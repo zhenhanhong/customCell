@@ -20,7 +20,7 @@
 #import "SelectItemsTableViewController.h"
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
-@interface ViewController : UIViewController
+@interface InfoCollectionViewController : UIViewController
 @property(strong, nonatomic)UITableView *tableview;
 @property(strong, nonatomic)NSMutableArray *arr;
 @property(strong, nonatomic)Collection *collection;

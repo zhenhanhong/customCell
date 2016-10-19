@@ -6,20 +6,66 @@
 //  Copyright © 2016年 Makermeet. All rights reserved.
 //
 
-#import "ZHCellTypeline.h"
+#import "ZHCellTypeliner.h"
+#import "Masonry.h"
+#import "SetColor.h"
 
-@implementation ZHCellTypeline
--(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    [self addSubview:self.textfield];
+@interface ZHCellTypeliner()<UITextFieldDelegate>
+@end
+@implementation ZHCellTypeliner
+
+- (id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recallkey) name:@"recall" object:nil];
+        [self addSubview:self.textfield];
+    }
     return self;
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
     
-}
--(void)setTextfield:(UITextField *)textfield{
+    self.textfield.frame = CGRectMake(100, 20, self.frame.size.width - 100 - 10, 44);
     
 }
+-(UITextField *)textfield{
+    if (_textfield == nil) {
+        _textfield = [[UITextField alloc]init];
+        _textfield.backgroundColor = [UIColor clearColor];
+        _textfield.textAlignment = NSTextAlignmentRight;
+        _textfield.placeholder = @"请输入文字";
+        _textfield.delegate = self;
+        [_textfield setTextColor:[SetColor colorWithHexString:@"#b2b2b2"]];
+        _textfield.font = [UIFont systemFontOfSize:14];
+    }
+    return _textfield;
+}
 
+
+- (void)setZhmessage:(ZHMessage *)zhmessage{
+    [super setZhmessage:zhmessage];
+    [_textfield setText:zhmessage.text];
+    [_textfield resignFirstResponder];
+    
+}
+//textfield代理
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"%@",textField.text);
+    
+    [super.delegate sendMessageWithDic:@{@"line": textField.text}];
+//    if (self.returnBlock != nil) {
+//        self.returnBlock(textField.text);
+//    }
+    return YES;
+}
+-(void)returnItemvalueWithBlock:(ReturnItemvalue)block{
+    self.returnBlock = block;
+}
+-(void)recallkey{
+    [_textfield resignFirstResponder];
+    
+}
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"recall" object:nil];
+}
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseTableviewcell.h"
-@interface ZHCellTypeline : BaseTableviewcell
+typedef void(^ReturnItemvalue)(NSString* value);
+@interface ZHCellTypeliner : BaseTableviewcell
 @property(nonatomic, strong)UITextField *textfield;
+@property(nonatomic, copy)ReturnItemvalue returnBlock;
+-(void)returnItemvalueWithBlock:(ReturnItemvalue)block;
 @end

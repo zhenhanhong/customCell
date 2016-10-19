@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseTableviewcell.h"
-@interface ZHCellTypeOtherr : BaseTableviewcell
+@interface ZHCellTypeOneSelect : BaseTableviewcell
 @property(nonatomic, strong)UILabel *item;
 @end

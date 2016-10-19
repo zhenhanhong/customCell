@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BaseTableviewcell.h"
 @interface ZHCellTypeMutiLinesr : BaseTableviewcell
-
+@property(nonatomic, strong)UITextView *textview;
+@property(nonatomic, strong)UIView *splitline;
 @end

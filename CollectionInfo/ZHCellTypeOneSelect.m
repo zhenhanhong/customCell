@@ -6,12 +6,12 @@
 //  Copyright © 2016年 Makermeet. All rights reserved.
 //
 
-#import "ZHCellTypeOtherr.h"
+#import "ZHCellTypeOneSelect.h"
 #import "SetColor.h"
-@interface ZHCellTypeOtherr ()
+@interface ZHCellTypeOneSelect ()
 @property(nonatomic, strong)NSString *type;
 @end
-@implementation ZHCellTypeOtherr
+@implementation ZHCellTypeOneSelect
 
 - (id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -45,21 +45,19 @@
 - (void)setZhmessage:(ZHMessage *)zhmessage{
     [super setZhmessage:zhmessage];
     _type = zhmessage.title;
-    if (zhmessage.text == nil || [zhmessage.text isEqualToString:@""]) {
+    if (zhmessage.oneseletStr == nil || [zhmessage.oneseletStr isEqualToString:@""]) {
         _item.text = @"点击进行选择";
     }else{
-        _item.text = zhmessage.text;
+        if ([_type isEqualToString:@"单选"]) {
+            _item.text = zhmessage.oneseletStr;
+        }
+        
     }
     
     
 }
 -(void)tapaction{
-    if ([_type isEqualToString:@"单选"]) {
         [[NSNotificationCenter defaultCenter]postNotificationName:@"item" object:nil];
-        
-    }else if ([_type isEqualToString:@"多选"]){
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"items" object:nil];
-    }
 }
 
 @end

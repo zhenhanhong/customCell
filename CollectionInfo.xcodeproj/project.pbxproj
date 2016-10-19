@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3034EC01DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = D3034EBF1DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.m */; };
 		D34281E61DAF54B700009EF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D34281E51DAF54B700009EF7 /* main.m */; };
 		D34281E91DAF54B700009EF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34281E81DAF54B700009EF7 /* AppDelegate.m */; };
-		D34281EC1DAF54B700009EF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34281EB1DAF54B700009EF7 /* ViewController.m */; };
+		D34281EC1DAF54B700009EF7 /* InfoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34281EB1DAF54B700009EF7 /* InfoCollectionViewController.m */; };
 		D34281EF1DAF54B700009EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34281ED1DAF54B700009EF7 /* Main.storyboard */; };
 		D34281F11DAF54B700009EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34281F01DAF54B700009EF7 /* Assets.xcassets */; };
 		D34281F41DAF54B700009EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34281F21DAF54B700009EF7 /* LaunchScreen.storyboard */; };
 		D34281FF1DAF54B700009EF7 /* CollectionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D34281FE1DAF54B700009EF7 /* CollectionInfoTests.m */; };
 		D342820A1DAF54B800009EF7 /* CollectionInfoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282091DAF54B800009EF7 /* CollectionInfoUITests.m */; };
+		D34282191DAF6A7C00009EF7 /* ZHMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282181DAF6A7C00009EF7 /* ZHMessage.m */; };
+		D342821B1DAF6D5000009EF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D342821A1DAF6D5000009EF7 /* Foundation.framework */; };
+		D342821E1DAF7A3500009EF7 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = D342821D1DAF7A3500009EF7 /* Collection.m */; };
+		D34282211DAF7B7A00009EF7 /* SettingItems.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282201DAF7B7A00009EF7 /* SettingItems.m */; };
+		D34282281DAF8A0D00009EF7 /* ZHCellTypeliner.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282271DAF8A0D00009EF7 /* ZHCellTypeliner.m */; };
+		D34282341DAF8C3100009EF7 /* BaseTableviewcell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282331DAF8C3100009EF7 /* BaseTableviewcell.m */; };
+		D342823B1DB0721000009EF7 /* ZHCellTypeMutiLinesr.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282361DB0721000009EF7 /* ZHCellTypeMutiLinesr.m */; };
+		D342823C1DB0721000009EF7 /* ZHCellTypeDater.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282381DB0721000009EF7 /* ZHCellTypeDater.m */; };
+		D342823D1DB0721000009EF7 /* ZHCellTypeOneSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = D34282391DB0721000009EF7 /* ZHCellTypeOneSelect.m */; };
+		D356309F1DB4C9B4005F766B /* SelectItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D356309E1DB4C9B4005F766B /* SelectItemsTableViewController.m */; };
+		D3D3AF491DB0813200FE354E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D3AF2F1DB0813200FE354E /* Info.plist */; };
+		D3D3AF4A1DB0813200FE354E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF311DB0813200FE354E /* MASCompositeConstraint.m */; };
+		D3D3AF4B1DB0813200FE354E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF341DB0813200FE354E /* MASConstraint.m */; };
+		D3D3AF4C1DB0813200FE354E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF361DB0813200FE354E /* MASConstraintMaker.m */; };
+		D3D3AF4D1DB0813200FE354E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF381DB0813200FE354E /* MASLayoutConstraint.m */; };
+		D3D3AF4E1DB0813200FE354E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF3C1DB0813200FE354E /* MASViewAttribute.m */; };
+		D3D3AF4F1DB0813200FE354E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF3E1DB0813200FE354E /* MASViewConstraint.m */; };
+		D3D3AF501DB0813200FE354E /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF401DB0813200FE354E /* NSArray+MASAdditions.m */; };
+		D3D3AF511DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF431DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D3D3AF521DB0813200FE354E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF451DB0813200FE354E /* View+MASAdditions.m */; };
+		D3D3AF531DB0813200FE354E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF481DB0813200FE354E /* ViewController+MASAdditions.m */; };
+		D3D3AF561DB0B3AB00FE354E /* SetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF551DB0B3AB00FE354E /* SetColor.m */; };
+		D3D3AF5A1DB0C64D00FE354E /* ZHDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF591DB0C64D00FE354E /* ZHDatePicker.m */; };
+		D3D3AF621DB0D8B700FE354E /* SelectItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D3AF611DB0D8B700FE354E /* SelectItemTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3034EBE1DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellTypeMutilSelect.h; sourceTree = "<group>"; };
+		D3034EBF1DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellTypeMutilSelect.m; sourceTree = "<group>"; };
 		D34281E11DAF54B700009EF7 /* CollectionInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34281E51DAF54B700009EF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D34281E71DAF54B700009EF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D34281E81DAF54B700009EF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D34281EA1DAF54B700009EF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D34281EB1DAF54B700009EF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D34281EA1DAF54B700009EF7 /* InfoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoCollectionViewController.h; sourceTree = "<group>"; };
+		D34281EB1DAF54B700009EF7 /* InfoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoCollectionViewController.m; sourceTree = "<group>"; };
 		D34281EE1DAF54B700009EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D34281F01DAF54B700009EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34281F31DAF54B700009EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +78,57 @@
 		D34282051DAF54B700009EF7 /* CollectionInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34282091DAF54B800009EF7 /* CollectionInfoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionInfoUITests.m; sourceTree = "<group>"; };
 		D342820B1DAF54B800009EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34282171DAF6A7C00009EF7 /* ZHMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMessage.h; sourceTree = "<group>"; };
+		D34282181DAF6A7C00009EF7 /* ZHMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMessage.m; sourceTree = "<group>"; };
+		D342821A1DAF6D5000009EF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D342821C1DAF7A3500009EF7 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		D342821D1DAF7A3500009EF7 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		D342821F1DAF7B7A00009EF7 /* SettingItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItems.h; sourceTree = "<group>"; };
+		D34282201DAF7B7A00009EF7 /* SettingItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItems.m; sourceTree = "<group>"; };
+		D34282261DAF8A0D00009EF7 /* ZHCellTypeliner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellTypeliner.h; sourceTree = "<group>"; };
+		D34282271DAF8A0D00009EF7 /* ZHCellTypeliner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellTypeliner.m; sourceTree = "<group>"; };
+		D34282321DAF8C3100009EF7 /* BaseTableviewcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableviewcell.h; sourceTree = "<group>"; };
+		D34282331DAF8C3100009EF7 /* BaseTableviewcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableviewcell.m; sourceTree = "<group>"; };
+		D34282351DB0721000009EF7 /* ZHCellTypeMutiLinesr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellTypeMutiLinesr.h; sourceTree = "<group>"; };
+		D34282361DB0721000009EF7 /* ZHCellTypeMutiLinesr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellTypeMutiLinesr.m; sourceTree = "<group>"; };
+		D34282371DB0721000009EF7 /* ZHCellTypeDater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellTypeDater.h; sourceTree = "<group>"; };
+		D34282381DB0721000009EF7 /* ZHCellTypeDater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellTypeDater.m; sourceTree = "<group>"; };
+		D34282391DB0721000009EF7 /* ZHCellTypeOneSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellTypeOneSelect.m; sourceTree = "<group>"; };
+		D342823A1DB0721000009EF7 /* ZHCellTypeOneSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellTypeOneSelect.h; sourceTree = "<group>"; };
+		D356309E1DB4C9B4005F766B /* SelectItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemsTableViewController.m; sourceTree = "<group>"; };
+		D3D3AF2F1DB0813200FE354E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D3AF301DB0813200FE354E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		D3D3AF311DB0813200FE354E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		D3D3AF321DB0813200FE354E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D3D3AF331DB0813200FE354E /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		D3D3AF341DB0813200FE354E /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		D3D3AF351DB0813200FE354E /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		D3D3AF361DB0813200FE354E /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		D3D3AF371DB0813200FE354E /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		D3D3AF381DB0813200FE354E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		D3D3AF391DB0813200FE354E /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		D3D3AF3A1DB0813200FE354E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		D3D3AF3B1DB0813200FE354E /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		D3D3AF3C1DB0813200FE354E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		D3D3AF3D1DB0813200FE354E /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		D3D3AF3E1DB0813200FE354E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		D3D3AF3F1DB0813200FE354E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF401DB0813200FE354E /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		D3D3AF411DB0813200FE354E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF421DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF431DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		D3D3AF441DB0813200FE354E /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF451DB0813200FE354E /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		D3D3AF461DB0813200FE354E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF471DB0813200FE354E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		D3D3AF481DB0813200FE354E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D3D3AF541DB0B3AB00FE354E /* SetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetColor.h; sourceTree = "<group>"; };
+		D3D3AF551DB0B3AB00FE354E /* SetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetColor.m; sourceTree = "<group>"; };
+		D3D3AF581DB0C64D00FE354E /* ZHDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHDatePicker.h; sourceTree = "<group>"; };
+		D3D3AF591DB0C64D00FE354E /* ZHDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHDatePicker.m; sourceTree = "<group>"; };
+		D3D3AF5C1DB0D65800FE354E /* SelectItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItemsTableViewController.h; sourceTree = "<group>"; };
+		D3D3AF601DB0D8B700FE354E /* SelectItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItemTableViewController.h; sourceTree = "<group>"; };
+		D3D3AF611DB0D8B700FE354E /* SelectItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D342821B1DAF6D5000009EF7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +160,8 @@
 		D34281D81DAF54B700009EF7 = {
 			isa = PBXGroup;
 			children = (
+				D342821A1DAF6D5000009EF7 /* Foundation.framework */,
+				D3D3AF2E1DB0813200FE354E /* Masonry */,
 				D34281E31DAF54B700009EF7 /* CollectionInfo */,
 				D34281FD1DAF54B700009EF7 /* CollectionInfoTests */,
 				D34282081DAF54B700009EF7 /* CollectionInfoUITests */,
@@ -103,8 +184,16 @@
 			children = (
 				D34281E71DAF54B700009EF7 /* AppDelegate.h */,
 				D34281E81DAF54B700009EF7 /* AppDelegate.m */,
-				D34281EA1DAF54B700009EF7 /* ViewController.h */,
-				D34281EB1DAF54B700009EF7 /* ViewController.m */,
+				D34281EA1DAF54B700009EF7 /* InfoCollectionViewController.h */,
+				D34281EB1DAF54B700009EF7 /* InfoCollectionViewController.m */,
+				D3D3AF601DB0D8B700FE354E /* SelectItemTableViewController.h */,
+				D3D3AF611DB0D8B700FE354E /* SelectItemTableViewController.m */,
+				D3D3AF5C1DB0D65800FE354E /* SelectItemsTableViewController.h */,
+				D356309E1DB4C9B4005F766B /* SelectItemsTableViewController.m */,
+				D3D3AF5B1DB0C65800FE354E /* View */,
+				D3D3AF571DB0BB5E00FE354E /* Model&View */,
+				D3D3AF541DB0B3AB00FE354E /* SetColor.h */,
+				D3D3AF551DB0B3AB00FE354E /* SetColor.m */,
 				D34281ED1DAF54B700009EF7 /* Main.storyboard */,
 				D34281F01DAF54B700009EF7 /* Assets.xcassets */,
 				D34281F21DAF54B700009EF7 /* LaunchScreen.storyboard */,
@@ -138,6 +227,90 @@
 				D342820B1DAF54B800009EF7 /* Info.plist */,
 			);
 			path = CollectionInfoUITests;
+			sourceTree = "<group>";
+		};
+		D34282251DAF899F00009EF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34282261DAF8A0D00009EF7 /* ZHCellTypeliner.h */,
+				D34282271DAF8A0D00009EF7 /* ZHCellTypeliner.m */,
+				D34282351DB0721000009EF7 /* ZHCellTypeMutiLinesr.h */,
+				D34282361DB0721000009EF7 /* ZHCellTypeMutiLinesr.m */,
+				D34282371DB0721000009EF7 /* ZHCellTypeDater.h */,
+				D34282381DB0721000009EF7 /* ZHCellTypeDater.m */,
+				D342823A1DB0721000009EF7 /* ZHCellTypeOneSelect.h */,
+				D34282391DB0721000009EF7 /* ZHCellTypeOneSelect.m */,
+				D3034EBE1DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.h */,
+				D3034EBF1DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.m */,
+				D34282321DAF8C3100009EF7 /* BaseTableviewcell.h */,
+				D34282331DAF8C3100009EF7 /* BaseTableviewcell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3D3AF2E1DB0813200FE354E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				D3D3AF2F1DB0813200FE354E /* Info.plist */,
+				D3D3AF301DB0813200FE354E /* MASCompositeConstraint.h */,
+				D3D3AF311DB0813200FE354E /* MASCompositeConstraint.m */,
+				D3D3AF321DB0813200FE354E /* MASConstraint+Private.h */,
+				D3D3AF331DB0813200FE354E /* MASConstraint.h */,
+				D3D3AF341DB0813200FE354E /* MASConstraint.m */,
+				D3D3AF351DB0813200FE354E /* MASConstraintMaker.h */,
+				D3D3AF361DB0813200FE354E /* MASConstraintMaker.m */,
+				D3D3AF371DB0813200FE354E /* MASLayoutConstraint.h */,
+				D3D3AF381DB0813200FE354E /* MASLayoutConstraint.m */,
+				D3D3AF391DB0813200FE354E /* Masonry.h */,
+				D3D3AF3A1DB0813200FE354E /* MASUtilities.h */,
+				D3D3AF3B1DB0813200FE354E /* MASViewAttribute.h */,
+				D3D3AF3C1DB0813200FE354E /* MASViewAttribute.m */,
+				D3D3AF3D1DB0813200FE354E /* MASViewConstraint.h */,
+				D3D3AF3E1DB0813200FE354E /* MASViewConstraint.m */,
+				D3D3AF3F1DB0813200FE354E /* NSArray+MASAdditions.h */,
+				D3D3AF401DB0813200FE354E /* NSArray+MASAdditions.m */,
+				D3D3AF411DB0813200FE354E /* NSArray+MASShorthandAdditions.h */,
+				D3D3AF421DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				D3D3AF431DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.m */,
+				D3D3AF441DB0813200FE354E /* View+MASAdditions.h */,
+				D3D3AF451DB0813200FE354E /* View+MASAdditions.m */,
+				D3D3AF461DB0813200FE354E /* View+MASShorthandAdditions.h */,
+				D3D3AF471DB0813200FE354E /* ViewController+MASAdditions.h */,
+				D3D3AF481DB0813200FE354E /* ViewController+MASAdditions.m */,
+			);
+			name = Masonry;
+			path = CollectionInfo/Masonry;
+			sourceTree = "<group>";
+		};
+		D3D3AF571DB0BB5E00FE354E /* Model&View */ = {
+			isa = PBXGroup;
+			children = (
+				D34282251DAF899F00009EF7 /* View */,
+				D3D3AF5F1DB0D86600FE354E /* Model */,
+			);
+			name = "Model&View";
+			sourceTree = "<group>";
+		};
+		D3D3AF5B1DB0C65800FE354E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3D3AF581DB0C64D00FE354E /* ZHDatePicker.h */,
+				D3D3AF591DB0C64D00FE354E /* ZHDatePicker.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3D3AF5F1DB0D86600FE354E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D342821C1DAF7A3500009EF7 /* Collection.h */,
+				D342821D1DAF7A3500009EF7 /* Collection.m */,
+				D34282171DAF6A7C00009EF7 /* ZHMessage.h */,
+				D34282181DAF6A7C00009EF7 /* ZHMessage.m */,
+				D342821F1DAF7B7A00009EF7 /* SettingItems.h */,
+				D34282201DAF7B7A00009EF7 /* SettingItems.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D3AF491DB0813200FE354E /* Info.plist in Resources */,
 				D34281F41DAF54B700009EF7 /* LaunchScreen.storyboard in Resources */,
 				D34281F11DAF54B700009EF7 /* Assets.xcassets in Resources */,
 				D34281EF1DAF54B700009EF7 /* Main.storyboard in Resources */,
@@ -270,9 +444,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34281EC1DAF54B700009EF7 /* ViewController.m in Sources */,
+				D3D3AF561DB0B3AB00FE354E /* SetColor.m in Sources */,
+				D3D3AF501DB0813200FE354E /* NSArray+MASAdditions.m in Sources */,
+				D342823B1DB0721000009EF7 /* ZHCellTypeMutiLinesr.m in Sources */,
+				D3D3AF5A1DB0C64D00FE354E /* ZHDatePicker.m in Sources */,
+				D3D3AF511DB0813200FE354E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D34281EC1DAF54B700009EF7 /* InfoCollectionViewController.m in Sources */,
+				D356309F1DB4C9B4005F766B /* SelectItemsTableViewController.m in Sources */,
+				D342821E1DAF7A3500009EF7 /* Collection.m in Sources */,
+				D3D3AF4E1DB0813200FE354E /* MASViewAttribute.m in Sources */,
+				D3D3AF4D1DB0813200FE354E /* MASLayoutConstraint.m in Sources */,
+				D3D3AF4A1DB0813200FE354E /* MASCompositeConstraint.m in Sources */,
+				D34282191DAF6A7C00009EF7 /* ZHMessage.m in Sources */,
+				D342823D1DB0721000009EF7 /* ZHCellTypeOneSelect.m in Sources */,
+				D3D3AF4F1DB0813200FE354E /* MASViewConstraint.m in Sources */,
+				D34282211DAF7B7A00009EF7 /* SettingItems.m in Sources */,
+				D342823C1DB0721000009EF7 /* ZHCellTypeDater.m in Sources */,
+				D3D3AF621DB0D8B700FE354E /* SelectItemTableViewController.m in Sources */,
+				D34282341DAF8C3100009EF7 /* BaseTableviewcell.m in Sources */,
 				D34281E91DAF54B700009EF7 /* AppDelegate.m in Sources */,
+				D3D3AF531DB0813200FE354E /* ViewController+MASAdditions.m in Sources */,
+				D3D3AF4C1DB0813200FE354E /* MASConstraintMaker.m in Sources */,
 				D34281E61DAF54B700009EF7 /* main.m in Sources */,
+				D3D3AF4B1DB0813200FE354E /* MASConstraint.m in Sources */,
+				D34282281DAF8A0D00009EF7 /* ZHCellTypeliner.m in Sources */,
+				D3D3AF521DB0813200FE354E /* View+MASAdditions.m in Sources */,
+				D3034EC01DB3BA7100DDC7C8 /* ZHCellTypeMutilSelect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +695,7 @@
 				D34282101DAF54B800009EF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34282111DAF54B800009EF7 /* Build configuration list for PBXNativeTarget "CollectionInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +704,7 @@
 				D34282131DAF54B800009EF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34282141DAF54B800009EF7 /* Build configuration list for PBXNativeTarget "CollectionInfoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +713,7 @@
 				D34282161DAF54B800009EF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

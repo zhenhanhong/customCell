@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SettingItems : NSObject
-
+@property(nonatomic, strong)NSString *id;
+@property(nonatomic, strong)NSString *settingId;
+@property(nonatomic, strong)NSString *title;
 @end

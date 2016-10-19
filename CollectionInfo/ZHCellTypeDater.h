@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseTableviewcell.h"
-@interface ZHCellTypeDater : UITableViewCell
-
+@interface ZHCellTypeDater : BaseTableviewcell
+@property(nonatomic, strong)UILabel *date;
 @end
