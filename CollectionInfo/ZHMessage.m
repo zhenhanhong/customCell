@@ -20,6 +20,12 @@ static UILabel *label = nil;
     }
     return self;
 }
+-(void)setID:(NSInteger)ID{
+    _ID = ID;
+}
+-(void)setOptions:(NSMutableArray *)options{
+    _options = options;
+}
 -(void)setType:(NSInteger)type{
     _type = type;
 }

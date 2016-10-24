@@ -12,6 +12,7 @@
 #define SCRWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCRHEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ZHCellTypeDater()<ZHDatePickerDelegate>
+@property(nonatomic, assign)NSInteger ID;
 @end
 @implementation ZHCellTypeDater
 
@@ -37,10 +38,17 @@
     [areaPicker show];
     
 }
+- (void)setZhmessage:(ZHMessage *)zhmessage{
+    [super setZhmessage:zhmessage];
+    
+    _ID = zhmessage.ID;
+    
+    
+}
 -(void)datePickerView:(ZHDatePicker *)datePickerView didDateSelected:(NSString *)date{
     NSLog(@"date:%@",date);
     _date.text = date;
-    [super.delegate sendMessageWithDic:@{@"date":date}];
+    [super.delegate sendMessageWithDic:@{[NSString stringWithFormat:@"%ld",_ID]:date}];
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
@@ -61,8 +69,4 @@
 }
 
 
-- (void)setZhmessage:(ZHMessage *)zhmessage{
-    [super setZhmessage:zhmessage];
-    
-}
 @end

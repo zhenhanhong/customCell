@@ -10,6 +10,8 @@
 #import "SetColor.h"
 @interface ZHCellTypeMutilSelect ()
 @property(nonatomic, strong)NSString *type;
+@property(nonatomic, assign)NSInteger ID;
+@property(nonatomic, strong)NSMutableArray *options;
 @end
 @implementation ZHCellTypeMutilSelect
 
@@ -45,6 +47,7 @@
 - (void)setZhmessage:(ZHMessage *)zhmessage{
     [super setZhmessage:zhmessage];
     _type = zhmessage.title;
+    _ID = zhmessage.ID;
     if (zhmessage.mutilseletStr == nil || [zhmessage.mutilseletStr isEqualToString:@""]) {
         _item.text = @"点击进行选择";
     }else{
@@ -56,7 +59,7 @@
     
 }
 -(void)tapaction{
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"items" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"items" object:nil userInfo:@{@"ID":[NSString stringWithFormat:@"%ld",_ID],@"opions":self.options}];
 }
 
 @end

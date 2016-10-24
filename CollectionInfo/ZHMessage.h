@@ -28,8 +28,9 @@ typedef NS_ENUM(NSInteger, ZHCellType){
 @property(strong,nonatomic)Collection *collection;
 @property(assign,nonatomic)NSInteger type;
 @property(strong,nonatomic)NSString *title;
+@property(assign,nonatomic)NSInteger ID;
 
-
+@property(strong,nonatomic)NSMutableArray *options;
 @property(strong,nonatomic)NSString *text;
 @property(strong,nonatomic)NSString *oneseletStr;
 @property(strong,nonatomic)NSString *mutilseletStr;

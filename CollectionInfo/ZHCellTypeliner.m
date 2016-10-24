@@ -11,6 +11,7 @@
 #import "SetColor.h"
 
 @interface ZHCellTypeliner()<UITextFieldDelegate>
+@property(nonatomic,assign)NSInteger ID;
 @end
 @implementation ZHCellTypeliner
 
@@ -45,6 +46,7 @@
 - (void)setZhmessage:(ZHMessage *)zhmessage{
     [super setZhmessage:zhmessage];
     [_textfield setText:zhmessage.text];
+    _ID = zhmessage.ID;
     [_textfield resignFirstResponder];
     
 }
@@ -52,10 +54,8 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     NSLog(@"%@",textField.text);
     
-    [super.delegate sendMessageWithDic:@{@"line": textField.text}];
-//    if (self.returnBlock != nil) {
-//        self.returnBlock(textField.text);
-//    }
+    [super.delegate sendMessageWithDic:@{[NSString stringWithFormat:@"%ld",_ID]: textField.text}];
+
     return YES;
 }
 -(void)returnItemvalueWithBlock:(ReturnItemvalue)block{

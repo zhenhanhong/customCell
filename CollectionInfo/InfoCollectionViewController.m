@@ -14,10 +14,16 @@
 @property(nonatomic, strong)NSString *date;
 @property(nonatomic, strong)NSString *oneSelect;
 @property(nonatomic, strong)NSString *MutiSelect;
+@property(nonatomic, strong)NSMutableArray *infoArr;
 @end
 
 @implementation InfoCollectionViewController
-
+-(NSMutableArray *)infoArr{
+    if (_infoArr == nil) {
+        _infoArr = [[NSMutableArray alloc]init];
+    }
+    return _infoArr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
@@ -43,16 +49,44 @@
     ZHMessage *message3 = [[ZHMessage alloc]init];
     ZHMessage *message4 = [[ZHMessage alloc]init];
     ZHMessage *message5 = [[ZHMessage alloc]init];
+    
+    ZHMessage *message1_1 = [[ZHMessage alloc]init];
+    ZHMessage *message2_1 = [[ZHMessage alloc]init];
+    ZHMessage *message3_1 = [[ZHMessage alloc]init];
+    ZHMessage *message4_1 = [[ZHMessage alloc]init];
+    ZHMessage *message5_1 = [[ZHMessage alloc]init];
     message1.title = @"单行";
+    message1.ID = 1;
     message1.cellType = ZHCellTypeline;
     message2.title = @"多行";
     message2.cellType = ZHCellTypeMutiLines;
+    message2.ID = 2;
     message3.title = @"日期";
+    message3.ID = 3;
     message3.cellType = ZHCellTypeDate;
     message4.title = @"单选";
+    message4.ID = 4;
     message4.cellType = ZHCellTypeOneS;
     message5.title = @"多选";
     message5.cellType = ZHCellTypeMutilS;
+    message5.ID = 5;
+    message1_1.title = @"单行";
+    message1_1.ID = 6;
+    message1_1.cellType = ZHCellTypeline;
+    message2_1.title = @"多行";
+    message2_1.ID = 7;
+    message2_1.cellType = ZHCellTypeMutiLines;
+    message3_1.title = @"日期";
+    message3_1.ID = 8;
+    message3_1.cellType = ZHCellTypeDate;
+    message4_1.title = @"单选";
+    message4_1.ID = 9;
+    message4_1.cellType = ZHCellTypeOneS;
+    message5_1.title = @"多选";
+    message5_1.ID = 10;
+    message5_1.cellType = ZHCellTypeMutilS;
+    
+    
     _collection = [[Collection alloc]init];
 
     _arr = [NSMutableArray array];
@@ -61,6 +95,12 @@
     [_arr addObject:message3];
     [_arr addObject:message4];
     [_arr addObject:message5];
+    
+    [_arr addObject:message1_1];
+    [_arr addObject:message2_1];
+    [_arr addObject:message3_1];
+    [_arr addObject:message4_1];
+    [_arr addObject:message5_1];
     /*******************************************************/
     
     //监听通知
@@ -98,39 +138,48 @@
 //接收所有message msg类型自定义
 -(void)sendMessageWithDic:(NSDictionary *)dic{
     if(dic != nil){
-    if ([dic.allKeys[0] isEqualToString:@"line"]) {
-        
-        NSLog(@"单行：%@",dic.allValues[0]);
-        self.line =dic.allValues[0];
-    }else if ([dic.allKeys[0] isEqualToString:@"lines"]){
-        NSLog(@"多行：%@",dic.allValues[0]);
-        self.line =dic.allValues[0];
-        //日期
-    }else if ([dic.allValues[0] isEqualToString:@"date"]){
-        self.date = dic.allValues[0];
-    }
-    }else{
-        
+        [self.infoArr addObject:dic];
+//    if ([dic.allKeys[0] isEqualToString:@"line"]) {
+//        
+//        NSLog(@"单行：%@",dic.allValues[0]);
+//        self.line =dic.allValues[0];
+//    }else if ([dic.allKeys[0] isEqualToString:@"lines"]){
+//        NSLog(@"多行：%@",dic.allValues[0]);
+//        self.line =dic.allValues[0];
+//        //日期
+//    }else if ([dic.allValues[0] isEqualToString:@"date"]){
+//        self.date = dic.allValues[0];
+//    }
+//    }else{
+//        
+//    }
     }
 }
 
--(void)poptoItem{
+-(void)poptoItem:(NSNotification *)notice{
     //单选
+    NSDictionary *dic = notice.userInfo;
+    NSString *IDstr = [dic objectForKey:@"ID"];
     SelectItemTableViewController *vc = [[SelectItemTableViewController alloc]init];
-    [vc returnMsg:^(NSString *msg) {
-        NSLog(@"%@",msg);
-        self.oneSelect = msg;
+    vc.ID = IDstr.integerValue;
+    [vc returnMsg:^(NSDictionary *msgdic) {
+        NSLog(@"%@",msgdic);
+//        self.oneSelect = msg;
+        [self.infoArr addObject:msgdic];
         [self.tableview reloadData];
     
     }];
     [self.navigationController pushViewController:vc animated:NO];
     
 }
--(void)poptoItems{
+-(void)poptoItems:(NSNotification *)notic{
     //多选
+    NSDictionary *dic = notic.userInfo;
+    NSString *IDstr = [dic objectForKey:@"ID"];
     SelectItemsTableViewController *vc = [[SelectItemsTableViewController alloc]init];
-    [vc returnMsgs:^(NSArray *arr) {
-        self.MutiSelect = [arr componentsJoinedByString:@","];
+    vc.ID = IDstr.integerValue;
+    [vc returnMsgs:^(NSDictionary *msgdic) {
+//        self.MutiSelect = [arr componentsJoinedByString:@","];
         [self.tableview reloadData];
     }];
     [self.navigationController pushViewController:vc animated:NO];

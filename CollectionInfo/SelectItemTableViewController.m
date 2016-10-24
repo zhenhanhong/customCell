@@ -65,7 +65,7 @@
     
     _message = _array_01[indexPath.item];
     if (self.returnTextBlock != nil) {
-        self.returnTextBlock(self.message);
+        self.returnTextBlock(@{@"ID":[NSString stringWithFormat:@"%ld",_ID],@"msgID":@"id",@"msg":@"msg"});
     }
     [self.navigationController popViewControllerAnimated:YES];
 }

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void (^ReturnMsgBlock)(NSString *msg);
+typedef void (^ReturnMsgBlock)(NSDictionary *msgdic);
 @interface SelectItemTableViewController : UITableViewController
 @property(nonatomic,copy)ReturnMsgBlock returnTextBlock;
 -(void)returnMsg:(ReturnMsgBlock)block;
+
+@property(nonatomic ,assign)NSInteger ID;
 
 @end

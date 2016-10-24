@@ -57,7 +57,7 @@
 - (void)selecteAllCells:(UIBarButtonItem *)sender {
     NSArray *arr = self.seletedDic.allKeys;
     if (_returnMsgsBock != nil) {
-        self.returnMsgsBock(arr);
+        self.returnMsgsBock(@{@"ID":[NSString stringWithFormat:@"%ld",_ID],@"options":arr});
     }
     [self.navigationController popViewControllerAnimated:YES];
   

@@ -9,7 +9,7 @@
 #import "ZHCellTypeMutiLinesr.h"
 #import "SetColor.h"
 @interface ZHCellTypeMutiLinesr()<UITextViewDelegate>
-
+@property(nonatomic, assign)NSInteger ID;
 @end
 @implementation ZHCellTypeMutiLinesr
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -27,13 +27,18 @@
     self.textview.frame = CGRectMake(10, self.splitline.frame.size.height + self.splitline.frame.origin.y, self.frame.size.width - 20, self.frame.size.height - 64 - 10);
     
 }
+- (void)setZhmessage:(ZHMessage *)zhmessage{
+    [super setZhmessage:zhmessage];
+
+    _ID = zhmessage.ID;
+
+    
+}
 -(UITextView *)textview{
     if (_textview == nil) {
         _textview = [[UITextView alloc]init];
         _textview.backgroundColor = [UIColor clearColor];
         _textview.font = [UIFont systemFontOfSize:14];
-//        _textview.text = @"...";
-//        _textview.returnKeyType = UIReturnKeyDone;
         _textview.delegate = self;
         [_textview setTextColor:[SetColor colorWithHexString:@"#b2b2b2"]];
     }
@@ -48,7 +53,7 @@
 }
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     NSLog(@"av:%@",textView.text);
-    [super.delegate sendMessageWithDic:@{@"lines":textView.text}];
+    [super.delegate sendMessageWithDic:@{[NSString stringWithFormat:@"%ld",_ID]:textView.text}];
     return YES;
 }
 -(void)recallkey{
